@@ -17,12 +17,12 @@ defmodule Floki.Mixfile do
   end
 
   def application do
-    [applications: [:logger, :mochiweb]]
+    [applications: [:logger]]
   end
 
   defp deps do
     [
-      {:mochiweb, "~> 2.15"},
+      {:mochiweb_html, "~> 2.15"},
       {:earmark, "~> 1.0", only: :dev},
       {:ex_doc, "~> 0.14", only: :dev},
       {:credo, ">= 0.0.0", only: [:dev, :test]},
